@@ -1,0 +1,24 @@
+CRITICAL - 2022-06-13 12:22:18 --> Undefined property: App\Controllers\Auth::$input
+in APPPATH\Controllers\Auth.php on line 12.
+ 1 APPPATH\Controllers\Auth.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Auth::$input', 'APPPATH\\Controllers\\Auth.php', 12, [])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->test()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-13 12:23:42 --> Undefined offset: 0
+in APPPATH\Controllers\Auth.php on line 14.
+ 1 APPPATH\Controllers\Auth.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Auth.php', 14, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->test()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-06-13 12:23:49 --> Undefined offset: 0
+in APPPATH\Controllers\Auth.php on line 14.
+ 1 APPPATH\Controllers\Auth.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Auth.php', 14, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Auth->test()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
