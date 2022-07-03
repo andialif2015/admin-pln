@@ -28,7 +28,11 @@ class Auth extends BaseController
                
                return redirect()->to(base_url('/login'));
             }
-            $params = ['id' => (int)$data['users']->id];
+            
+            $params = [
+                'id' => (int)$data['users']->id,
+                'username' => $data['users']->username
+            ];
                session()->set($params);
             if($data['users']->role == 1){
                 return redirect()->to(base_url('/admin/dashboard'));

@@ -1,0 +1,222 @@
+CRITICAL - 2022-07-03 02:02:49 --> Undefined property: CodeIgniter\View\View::$endSection
+in APPPATH\Views\admin\upload.php on line 4.
+ 1 APPPATH\Views\admin\upload.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$endSection', 'APPPATH\\Views\\admin\\upload.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\upload.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/upload', [], true)
+ 5 APPPATH\Controllers\Admin.php(26): view('admin/upload')
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->upload()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 02:47:53 --> Too few arguments to function App\Controllers\Survey::index(), 0 passed in D:\Project\adminPln\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Survey.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->index()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 02:49:03 --> Too few arguments to function App\Controllers\Survey::index(), 0 passed in D:\Project\adminPln\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Survey.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->index()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 02:49:05 --> Too few arguments to function App\Controllers\Survey::index(), 0 passed in D:\Project\adminPln\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Survey.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->index()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 02:49:20 --> Too few arguments to function App\Controllers\Survey::index(), 0 passed in D:\Project\adminPln\system\CodeIgniter.php on line 898 and exactly 1 expected
+in APPPATH\Controllers\Survey.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->index()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-03 03:08:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND 1 = :1:
+ LIMIT 1' at line 3
+CRITICAL - 2022-07-03 03:08:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND 1 = :1:
+ LIMIT 1' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `costumers`
+WHERE 0 = :0:
+AND 1 = :1:
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `costumers`
+WHERE 0 = :0:
+AND 1 = :1:
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `costumers`
+WHERE 0 = :0:
+AND 1 = :1:
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `costumers`
+WHERE 0 = :0:
+AND 1 = :1:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Survey.php(17): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->index('11')
+ 9 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 03:12:56 --> Undefined index: ID_PEL
+in APPPATH\Views\dashboard\survey.php on line 50.
+ 1 APPPATH\Views\dashboard\survey.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_PEL', 'APPPATH\\Views\\dashboard\\survey.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\survey.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard/survey', [], true)
+ 5 APPPATH\Controllers\Survey.php(18): view('dashboard/survey', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->index('11')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 03:42:59 --> Undefined property: DateTime::$date
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 APPPATH\Controllers\Admin.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: DateTime::$date', 'APPPATH\\Controllers\\Admin.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->preview()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 03:45:09 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';'
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 5 SYSTEMPATH\CodeIgniter.php(848): class_exists('\\App\\Controllers\\Admin', true)
+ 6 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 03:46:29 --> Cannot use object of type DateTime as array
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->preview()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 03:47:31 --> Undefined property: DateTime::$date
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 APPPATH\Controllers\Admin.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: DateTime::$date', 'APPPATH\\Controllers\\Admin.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->preview()
+ 3 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 04:28:54 --> Call to a member function format() on null
+in APPPATH\Controllers\Admin.php on line 148.
+ 1 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Admin->preview()
+ 2 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 04:33:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\survey.php on line 36.
+ 1 APPPATH\Views\dashboard\survey.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\dashboard\\survey.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\survey.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard/survey', [], true)
+ 5 APPPATH\Controllers\Survey.php(18): view('dashboard/survey', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 04:53:16 --> Invalid file: dashboard/data-survey.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/data-survey.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard/data-survey', [], true)
+ 3 APPPATH\Controllers\Survey.php(34): view('dashboard/data-survey', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->show()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 04:54:46 --> Invalid file: dashboard/data-survey.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/data-survey.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard/data-survey', [], true)
+ 3 APPPATH\Controllers\Survey.php(35): view('dashboard/data-survey', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->show()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 04:55:35 --> Invalid file: dashboard/data-survey.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/data-survey.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard/data-survey', [], true)
+ 3 APPPATH\Controllers\Survey.php(35): view('dashboard/data-survey', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->show()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 04:56:03 --> Invalid file: dashboard/data-survey.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/data-survey.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard/data-survey', [], true)
+ 3 APPPATH\Controllers\Survey.php(35): view('dashboard/data-survey', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->show()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 04:56:05 --> Invalid file: dashboard/data-survey.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/data-survey.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard/data-survey', [], true)
+ 3 APPPATH\Controllers\Survey.php(35): view('dashboard/data-survey', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->show()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 04:56:43 --> Invalid file: dashboard/data-survey.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/data-survey.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard/data-survey', [], true)
+ 3 APPPATH\Controllers\Survey.php(35): view('dashboard/data-survey', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->show()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 04:56:45 --> Invalid file: dashboard/data-survey.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/data-survey.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard/data-survey', [], true)
+ 3 APPPATH\Controllers\Survey.php(35): view('dashboard/data-survey', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->show()
+ 5 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-03 04:57:17 --> Undefined index: IDPEL
+in APPPATH\Views\dashboard\daftar-survey.php on line 55.
+ 1 APPPATH\Views\dashboard\daftar-survey.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: IDPEL', 'APPPATH\\Views\\dashboard\\daftar-survey.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\daftar-survey.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('dashboard/daftar-survey', [], true)
+ 5 APPPATH\Controllers\Survey.php(35): view('dashboard/daftar-survey', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(898): App\Controllers\Survey->show()
+ 7 SYSTEMPATH\CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Survey))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

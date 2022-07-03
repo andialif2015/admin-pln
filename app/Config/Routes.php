@@ -35,10 +35,11 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->addRedirect('/', '/login');
 $routes->get('/login', 'Auth::login' );
 $routes->post('/login/proses', 'Auth::prosesLogin');
 $routes->get('/dashboard', 'Dashboard::index');
+
 $routes->get('/logout', 'Auth::logout');
 $routes->get('/testing', 'Test::index');
 
@@ -46,7 +47,18 @@ $routes->get('/admin/dashboard', 'Admin::index');
 $routes->get('/admin/upload', 'Admin::upload');
 $routes->get('/admin/export', 'Admin::export');
 $routes->post('/admin/import', 'Admin::import');
+$routes->post('/admin/preview', 'Admin::preview');
+$routes->get('/admin/show', 'Admin::tampilData');
 
+$routes->get('/admin/sortir', 'Admin::sortir');
+$routes->get('/admin/profile', 'Admin::profile');
+$routes->get('/admin/setting', 'Admin::setting');
+
+// $routes->get('/user/survey', 'Survey::index');
+$routes->get('/user/survey/(:num)', 'Survey::index/$1');
+$routes->get('/user/show', 'Dashboard::show');
+$routes->post('/user/survey/proses', 'Survey::proses');
+$routes->get('/user/survey/show', 'Survey::show');
 
 /*
  * --------------------------------------------------------------------

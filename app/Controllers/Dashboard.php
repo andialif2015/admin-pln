@@ -3,16 +3,25 @@
 namespace App\Controllers;
 
 use App\Models\UserModel;
+use App\Models\CostumerModel;
+
 
 class Dashboard extends BaseController
 {
-    public function index(){
-        $userModel = new UserModel();
-        $id = session()->get('id');
-        $data['user'] = $userModel->where('id', $id)->first();
-        dd($data['user']);   
+    function __construct()
+    {   
+        $this->costumer = new CostumerModel();
+    }
+    public function index()
+    {
+        return view('/dashboard/index');
+    }
+    public function show()
+    {
+        $data['dataExcel'] = $this->costumer->findAll();
 
-        // return view('/dashboard/index');
+        return view('dashboard/daftar-data', $data);
+
     }
 
 }
